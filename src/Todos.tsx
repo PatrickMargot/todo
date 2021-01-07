@@ -11,13 +11,12 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import AddIcon from "@material-ui/icons/Add";
 
 function Todos() {
+  const [todoName, setTodoName] = useState("");
   const [todos, setTodos] = useState<string[]>(() => {
     const localValue = localStorage.getItem("TODOS");
 
     return localValue !== null ? JSON.parse(localValue) : [];
   });
-
-  const [todoName, setTodoName] = useState("");
 
   useEffect(() => {
     localStorage.setItem("TODOS", JSON.stringify(todos));
