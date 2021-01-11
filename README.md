@@ -8,11 +8,11 @@ Check the live demo here: https://patrickmargot.github.io/todo/
 ## Installation
 1. Clone repository
 ```sh
-git clone https://github.com/PatrickMargot/chess.git
+git clone https://github.com/PatrickMargot/todo.git
 ```
 2. Move to project folder
 ```sh
-cd chess
+cd todo
 ````
 3. Install dependencies and start
 ```sh
